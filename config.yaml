@@ -120,7 +120,7 @@ window_behavior:
       shown_on_top: false
 
 workspaces:
-  - name: 'mofficen'
+  - name: 'main'
   - name: 'code'
   - name: 'shell'
   - name: 'web'
@@ -148,7 +148,7 @@ window_rules:
   - commands: ['move --workspace message', 'focus --workspace message']
     match:
       - window_process: { regex: "QQ"}
-      - window_process: { regex: "Weixin|Telegram"}
+      - window_process: { regex: "WeChat"}
   - commands: ['move --workspace music', 'focus --workspace music']
     match:
       - window_process: { regex: "QQMusic"}
@@ -308,7 +308,7 @@ keybindings:
     bindings: ['alt+d']
 
   # Change focus to a workspace defined in `workspaces` config.
-  - commands: ['focus --workspace mofficen']
+  - commands: ['focus --workspace main']
     bindings: ['alt+1']
   - commands: ['focus --workspace code']
     bindings: ['alt+2']
@@ -339,7 +339,7 @@ keybindings:
     bindings: ['alt+shift+s']
 
   # Move focused window to a workspace defined in `workspaces` config.
-  - commands: ['move --workspace mofficen', 'focus --workspace mofficen']
+  - commands: ['move --workspace mofficen', 'focus --workspace main']
     bindings: ['alt+shift+1']
   - commands: ['move --workspace code', 'focus --workspace code']
     bindings: ['alt+shift+2']
