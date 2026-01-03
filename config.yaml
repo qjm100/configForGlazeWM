@@ -141,6 +141,7 @@ window_rules:
       - window_process: { regex: "pycharm"}
       - window_process: { regex: "webstorm"}
       - window_process: { regex: "Code"}
+      - window_process: { regex: "Trae CN"}
   - commands: ['move --workspace shell', 'focus --workspace shell']
     match:
       - window_process: { regex: "WindowsTerminal"}
@@ -357,3 +358,4 @@ keybindings:
     bindings: ['alt+shift+8']
   - commands: ['move --workspace office', 'focus --workspace office']
     bindings: ['alt+shift+9']
+
